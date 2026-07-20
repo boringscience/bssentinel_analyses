@@ -1,0 +1,84 @@
+feature,importance
+lactate_missing,0.057652213
+spo2_worst,0.049638215
+gcs_verbal_worst,0.043599922
+gcs_motor_worst,0.039212942
+news2_gcs,0.03650197
+gcs_motor,0.030052176
+news2_total,0.029579254
+respiratory_rate_worst,0.028709538
+admit_offset_hours,0.026745774
+vasopressors,0.025946848
+adm_type_OBSERVATION ADMIT,0.024735432
+antibiotics,0.021852318
+anticoagulants,0.021682415
+adm_type_SURGICAL SAME DAY ADMISSION,0.021491064
+gcs_total,0.018211037
+news2_hr,0.017830411
+lactate,0.01748769
+gcs_verbal,0.016422138
+news2_rr,0.015914548
+n_vitals_missing,0.01413422
+bilirubin_missing,0.013648241
+bun,0.013484191
+respiratory_rate,0.012832749
+temperature,0.0124675045
+glucose_missing,0.01230602
+gcs_eye_worst,0.011233742
+age,0.010768089
+diastolic_bp_worst,0.010761797
+heart_rate_worst,0.010649008
+adm_type_DIRECT EMER.,0.010477
+gcs_eye,0.0102496175
+gcs_verbal_trend,0.010043865
+gender,0.010027977
+systolic_bp,0.009928058
+bilirubin,0.009877144
+wbc,0.009812164
+creatinine,0.009638685
+heart_rate,0.0095977
+inr,0.009553615
+sodium,0.009304802
+temperature_worst,0.009226282
+n_labs_missing,0.0091763325
+platelets,0.009013057
+adm_type_EW EMER.,0.009002641
+temperature_trend,0.008825146
+news2_sbp,0.008811025
+potassium,0.008795423
+hemoglobin,0.008786408
+gcs_motor_trend,0.008767442
+glucose,0.008656795
+adm_type_ELECTIVE,0.008555431
+sodium_missing,0.008427032
+inr_missing,0.008238439
+crp,0.008083614
+adm_type_URGENT,0.007845807
+heart_rate_trend,0.007716293
+systolic_bp_trend,0.0074853194
+diastolic_bp,0.007338281
+gcs_eye_trend,0.0072877984
+systolic_bp_worst,0.0068196035
+respiratory_rate_trend,0.006789541
+spo2_trend,0.006635508
+spo2,0.006609683
+diastolic_bp_trend,0.0064205443
+news2_temp,0.0063665505
+crp_missing,0.0058612237
+adm_type_EU OBSERVATION,0.0058348123
+platelets_missing,0.005468625
+news2_spo2,0.0051585906
+adm_type_DIRECT OBSERVATION,0.0039346567
+systolic_bp_missing,0.0
+potassium_missing,0.0
+news2_o2,0.0
+bun_missing,0.0
+creatinine_missing,0.0
+adm_type_AMBULATORY OBSERVATION,0.0
+hemoglobin_missing,0.0
+wbc_missing,0.0
+temperature_missing,0.0
+respiratory_rate_missing,0.0
+spo2_missing,0.0
+diastolic_bp_missing,0.0
+heart_rate_missing,0.0

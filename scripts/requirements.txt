@@ -1,0 +1,21 @@
+# bssentinel ML pipeline
+# Install: pip install -r requirements.txt
+
+# Core data
+pandas>=2.0.0
+numpy>=1.24.0
+pyarrow>=14.0.0          # parquet support
+
+# ML
+scikit-learn>=1.4.0
+xgboost>=2.0.0
+
+# Explainability
+shap>=0.44.0
+
+# Visualisation
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Statistics
+scipy>=1.11.0

@@ -1,0 +1,221 @@
+{
+  "n_observations": 1334773,
+  "n_positive": 26201,
+  "prevalence": 0.0196,
+  "primary_model": "XGBoost",
+  "auroc": {
+    "xgboost": {
+      "auc": 0.7582776644661536,
+      "ci_lo": 0.7554506825587312,
+      "ci_hi": 0.7612202349543193
+    },
+    "logistic_reg": {
+      "auc": 0.7080663447702287,
+      "ci_lo": 0.7047807066730738,
+      "ci_hi": 0.7112043855945083
+    },
+    "news2_only": {
+      "auc": 0.5682634456067539
+    }
+  },
+  "auprc": {
+    "xgboost": 0.10222258440630594,
+    "logistic_reg": 0.06834017800907265,
+    "baseline_prev": 0.019629554988001705
+  },
+  "delong_xgb_vs_news2": {
+    "z": 80.2883002419018,
+    "p": 0.0
+  },
+  "threshold_analysis": [
+    {
+      "threshold": 0.1,
+      "sensitivity": 0.9967,
+      "specificity": 0.0347,
+      "ppv": 0.0203,
+      "npv": 0.9981,
+      "tp": 26115,
+      "fp": 1263129,
+      "tn": 45443,
+      "fn": 86
+    },
+    {
+      "threshold": 0.15,
+      "sensitivity": 0.9862,
+      "specificity": 0.0943,
+      "ppv": 0.0213,
+      "npv": 0.9971,
+      "tp": 25840,
+      "fp": 1185146,
+      "tn": 123426,
+      "fn": 361
+    },
+    {
+      "threshold": 0.2,
+      "sensitivity": 0.9691,
+      "specificity": 0.1755,
+      "ppv": 0.023,
+      "npv": 0.9965,
+      "tp": 25392,
+      "fp": 1078880,
+      "tn": 229692,
+      "fn": 809
+    },
+    {
+      "threshold": 0.25,
+      "sensitivity": 0.9421,
+      "specificity": 0.269,
+      "ppv": 0.0252,
+      "npv": 0.9957,
+      "tp": 24684,
+      "fp": 956501,
+      "tn": 352071,
+      "fn": 1517
+    },
+    {
+      "threshold": 0.3,
+      "sensitivity": 0.9058,
+      "specificity": 0.3665,
+      "ppv": 0.0278,
+      "npv": 0.9949,
+      "tp": 23734,
+      "fp": 829017,
+      "tn": 479555,
+      "fn": 2467
+    },
+    {
+      "threshold": 0.35,
+      "sensitivity": 0.8545,
+      "specificity": 0.4649,
+      "ppv": 0.031,
+      "npv": 0.9938,
+      "tp": 22390,
+      "fp": 700256,
+      "tn": 608316,
+      "fn": 3811
+    },
+    {
+      "threshold": 0.4,
+      "sensitivity": 0.7905,
+      "specificity": 0.5642,
+      "ppv": 0.035,
+      "npv": 0.9926,
+      "tp": 20713,
+      "fp": 570264,
+      "tn": 738308,
+      "fn": 5488
+    },
+    {
+      "threshold": 0.5,
+      "sensitivity": 0.6133,
+      "specificity": 0.7553,
+      "ppv": 0.0478,
+      "npv": 0.9899,
+      "tp": 16070,
+      "fp": 320148,
+      "tn": 988424,
+      "fn": 10131
+    }
+  ],
+  "high_sensitivity_point": {
+    "threshold": 0.3062393069267273,
+    "sensitivity": 0.9,
+    "specificity": 0.3787,
+    "ppv": 0.0282,
+    "npv": 0.9947,
+    "tp": 23581,
+    "fp": 813044,
+    "tn": 495528,
+    "fn": 2620
+  },
+  "calibration_xgb": {
+    "brier_score": 0.175,
+    "calibration_bins": [
+      {
+        "mean_predicted": 0.1106,
+        "fraction_positive": 0.003
+      },
+      {
+        "mean_predicted": 0.1862,
+        "fraction_positive": 0.0045
+      },
+      {
+        "mean_predicted": 0.242,
+        "fraction_positive": 0.0062
+      },
+      {
+        "mean_predicted": 0.2942,
+        "fraction_positive": 0.0086
+      },
+      {
+        "mean_predicted": 0.3456,
+        "fraction_positive": 0.0114
+      },
+      {
+        "mean_predicted": 0.3964,
+        "fraction_positive": 0.0139
+      },
+      {
+        "mean_predicted": 0.4471,
+        "fraction_positive": 0.0186
+      },
+      {
+        "mean_predicted": 0.5018,
+        "fraction_positive": 0.0219
+      },
+      {
+        "mean_predicted": 0.5736,
+        "fraction_positive": 0.0314
+      },
+      {
+        "mean_predicted": 0.72,
+        "fraction_positive": 0.0769
+      }
+    ]
+  },
+  "calibration_lr": {
+    "brier_score": 0.2134,
+    "calibration_bins": [
+      {
+        "mean_predicted": 0.1628,
+        "fraction_positive": 0.005
+      },
+      {
+        "mean_predicted": 0.2619,
+        "fraction_positive": 0.0072
+      },
+      {
+        "mean_predicted": 0.3178,
+        "fraction_positive": 0.0086
+      },
+      {
+        "mean_predicted": 0.3637,
+        "fraction_positive": 0.0113
+      },
+      {
+        "mean_predicted": 0.4064,
+        "fraction_positive": 0.0132
+      },
+      {
+        "mean_predicted": 0.4492,
+        "fraction_positive": 0.0156
+      },
+      {
+        "mean_predicted": 0.4946,
+        "fraction_positive": 0.0191
+      },
+      {
+        "mean_predicted": 0.5461,
+        "fraction_positive": 0.0232
+      },
+      {
+        "mean_predicted": 0.6118,
+        "fraction_positive": 0.0303
+      },
+      {
+        "mean_predicted": 0.734,
+        "fraction_positive": 0.0627
+      }
+    ]
+  }
+}

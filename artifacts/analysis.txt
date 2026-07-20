@@ -1,0 +1,70 @@
+19:50:23  INFO      Feature matrix: 8,560,730 rows, 87 columns
+19:50:23  INFO        Label prevalence: 0.018 (156,462 positive windows)
+19:51:14  INFO        Features: 83
+19:51:14  INFO        Positive rate: 0.018
+19:51:17  INFO        After dropping all-missing vitals: 1,334,773 windows
+19:51:17  INFO      
+[3/5] Training models...
+19:51:18  INFO      Training on 1,334,773 windows, 83 features
+19:51:18  INFO        Positive rate: 0.020  (26,201 / 1,334,773)
+19:51:19  INFO        Scale pos weight: 49.94
+19:51:19  INFO      Training Logistic Regression baseline...
+19:53:43  INFO      Training XGBoost model...
+19:53:57  INFO        Fold 1/5 done
+19:54:14  INFO        Fold 2/5 done
+19:54:34  INFO        Fold 3/5 done
+19:54:51  INFO        Fold 4/5 done
+19:55:14  INFO        Fold 5/5 done
+/Users/bs/miniconda/envs/py-sci/lib/python3.10/site-packages/sklearn/calibration.py:330: FutureWarning: The `cv='prefit'` option is deprecated in 1.6 and will be removed in 1.8. You can use CalibratedClassifierCV(FrozenEstimator(estimator)) instead.
+  warnings.warn(
+19:56:55  INFO      Models saved to artifacts
+19:56:55  INFO      
+[4/5] Evaluating models...
+19:56:55  INFO      Computing evaluation metrics...
+20:12:48  INFO        XGBoost AUROC:  0.7583 (95% CI 0.7555–0.7612)
+20:12:48  INFO        LR AUROC:       0.7081 (95% CI 0.7048–0.7112)
+20:12:48  INFO        NEWS2 AUROC:    0.5683
+20:15:24  INFO        DeLong XGB vs NEWS2: z=80.288, p=0.0000
+20:15:25  INFO        @ 90% sensitivity: specificity=0.379, threshold=0.306
+20:15:25  INFO      Metrics saved to artifacts/metrics.json
+20:15:25  INFO        Saved roc_curve.png
+20:15:27  INFO        Saved pr_curve.png
+20:15:27  INFO        Saved calibration.png
+20:15:27  INFO        Saved threshold_analysis.png
+
+════════════════════════════════════════════════════════════
+  bssentinel — Validation Summary
+════════════════════════════════════════════════════════════
+  Dataset:  1,334,773 windows  |  26,201 events  |  prevalence 2.0%
+
+  AUROC (95% CI)
+    xgboost               0.7583  (0.755–0.761)
+    logistic_reg          0.7081  (0.705–0.711)
+    news2_only            0.5683  
+
+  AUPRC
+    xgboost               0.1022
+    logistic_reg          0.0683
+    baseline_prev         0.0196
+
+  DeLong XGB vs NEWS2:  z=80.288  p=0.0000  ✓ significant
+
+  @ 90% Sensitivity:  specificity=0.379  PPV=0.028  threshold=0.306
+════════════════════════════════════════════════════════════
+
+20:15:27  INFO      
+[5/5] SHAP skipped (--no-shap)
+20:15:27  INFO      
+============================================================
+20:15:27  INFO        Training complete.
+20:15:27  INFO        AUROC:  0.7583
+20:15:27  INFO        AUPRC:  0.1022
+20:15:27  INFO        Artifacts: artifacts/
+20:15:27  INFO      ============================================================
+
+  Next steps:
+  1. Review metrics.json and figures/ in artifacts
+  2. AUC gain over NEWS2 alone: +0.1900 (p≥0.05 — not significant)
+  3. Deploy: copy artifacts/ to the VPS and update server/main.py to load the model
+     See: softwares/bssentinel/ml/explain.py → build_server_explain_fn()
+  4. Retrain at 6h, 12h, 48h horizons for multi-horizon support
