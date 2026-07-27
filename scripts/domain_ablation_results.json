@@ -1,0 +1,135 @@
+{
+  "full_model": {
+    "auroc": 0.7583,
+    "ci_lo": 0.7554,
+    "ci_hi": 0.7611,
+    "auprc": 0.1022,
+    "n_features": 83,
+    "elapsed_seconds": 62.6
+  },
+  "domain_exclusion": {
+    "Vital signs": {
+      "auroc": 0.7076,
+      "ci_lo": 0.7045,
+      "ci_hi": 0.7107,
+      "auprc": 0.0823,
+      "n_features": 55,
+      "elapsed_seconds": 34.3,
+      "features_removed": 28,
+      "features_remaining": 55,
+      "auroc_drop": 0.0507
+    },
+    "Laboratory values": {
+      "auroc": 0.7545,
+      "ci_lo": 0.7515,
+      "ci_hi": 0.7573,
+      "auprc": 0.0997,
+      "n_features": 71,
+      "elapsed_seconds": 62.6,
+      "features_removed": 12,
+      "features_remaining": 71,
+      "auroc_drop": 0.0038
+    },
+    "Medications": {
+      "auroc": 0.7543,
+      "ci_lo": 0.7513,
+      "ci_hi": 0.7572,
+      "auprc": 0.1009,
+      "n_features": 80,
+      "elapsed_seconds": 68.8,
+      "features_removed": 3,
+      "features_remaining": 80,
+      "auroc_drop": 0.004
+    },
+    "NEWS2 subscores": {
+      "auroc": 0.7584,
+      "ci_lo": 0.7555,
+      "ci_hi": 0.7611,
+      "auprc": 0.1025,
+      "n_features": 75,
+      "elapsed_seconds": 58.2,
+      "features_removed": 8,
+      "features_remaining": 75,
+      "auroc_drop": -0.0001
+    },
+    "Missingness indicators": {
+      "auroc": 0.758,
+      "ci_lo": 0.7549,
+      "ci_hi": 0.7608,
+      "auprc": 0.1029,
+      "n_features": 63,
+      "elapsed_seconds": 57.4,
+      "features_removed": 20,
+      "features_remaining": 63,
+      "auroc_drop": 0.0003
+    },
+    "Temporal & demographics": {
+      "auroc": 0.7446,
+      "ci_lo": 0.7415,
+      "ci_hi": 0.7476,
+      "auprc": 0.0921,
+      "n_features": 71,
+      "elapsed_seconds": 61.1,
+      "features_removed": 12,
+      "features_remaining": 71,
+      "auroc_drop": 0.0137
+    }
+  },
+  "domain_only": {
+    "Vital signs": {
+      "auroc": 0.7167,
+      "ci_lo": 0.7135,
+      "ci_hi": 0.7197,
+      "auprc": 0.077,
+      "n_features": 28,
+      "elapsed_seconds": 35.2,
+      "n_features_used": 28
+    },
+    "Laboratory values": {
+      "auroc": 0.6072,
+      "ci_lo": 0.6038,
+      "ci_hi": 0.6105,
+      "auprc": 0.0293,
+      "n_features": 12,
+      "elapsed_seconds": 10.8,
+      "n_features_used": 12
+    },
+    "Medications": {
+      "auroc": 0.5665,
+      "ci_lo": 0.563,
+      "ci_hi": 0.5701,
+      "auprc": 0.0244,
+      "n_features": 3,
+      "elapsed_seconds": 2.0,
+      "n_features_used": 3
+    },
+    "NEWS2 subscores": {
+      "auroc": 0.6305,
+      "ci_lo": 0.627,
+      "ci_hi": 0.634,
+      "auprc": 0.0525,
+      "n_features": 8,
+      "elapsed_seconds": 10.8,
+      "n_features_used": 8
+    },
+    "Missingness indicators": {
+      "auroc": 0.5837,
+      "ci_lo": 0.58,
+      "ci_hi": 0.5872,
+      "auprc": 0.0387,
+      "n_features": 20,
+      "elapsed_seconds": 5.1,
+      "n_features_used": 20
+    },
+    "Temporal & demographics": {
+      "auroc": 0.5926,
+      "ci_lo": 0.589,
+      "ci_hi": 0.5963,
+      "auprc": 0.039,
+      "n_features": 12,
+      "elapsed_seconds": 5.8,
+      "n_features_used": 12
+    }
+  },
+  "description": "Domain-level ablation analysis. 'domain_exclusion' shows AUROC when each domain is removed (leave-one-out). 'domain_only' shows AUROC when only that domain is used. auroc_drop = full_model AUROC - ablated AUROC (positive = domain helps)."
+}

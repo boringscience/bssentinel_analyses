@@ -1,0 +1,51 @@
+{
+  "mNEWS2": {
+    "auroc": 0.5683,
+    "ci_lo": 0.5646,
+    "ci_hi": 0.5718,
+    "auprc": 0.0249,
+    "n_valid": 1334773,
+    "n_events": 26201,
+    "pct_valid": 100.0
+  },
+  "qSOFA": {
+    "auroc": 0.5488,
+    "ci_lo": 0.5455,
+    "ci_hi": 0.5519,
+    "auprc": 0.0212,
+    "n_valid": 1294562,
+    "n_events": 24634,
+    "pct_valid": 97.0,
+    "at_cutoff_2": {
+      "sensitivity": 0.3457,
+      "specificity": 0.7133,
+      "ppv": 0.0229,
+      "npv": 0.9825
+    }
+  },
+  "MEWS": {
+    "auroc": 0.5334,
+    "ci_lo": 0.5301,
+    "ci_hi": 0.5368,
+    "auprc": 0.021,
+    "n_valid": 1334773,
+    "n_events": 26201,
+    "pct_valid": 100.0
+  },
+  "Shock_Index": {
+    "auroc": 0.5387,
+    "ci_lo": 0.535,
+    "ci_hi": 0.5424,
+    "auprc": 0.0219,
+    "n_valid": 1293387,
+    "n_events": 24532,
+    "pct_valid": 96.9
+  },
+  "description": "AUROC comparison of bssentinel with traditional early warning scores. mNEWS2 = modified NEWS2 (without supplemental O2). qSOFA = quick SOFA (SBP \u2264 100, RR \u2265 22, GCS < 15). MEWS = Modified Early Warning Score. Shock Index = HR / SBP.",
+  "manuscript_changes": {
+    "methods": "Add computation of qSOFA, MEWS, and Shock Index from available features",
+    "table_3": "Add rows for qSOFA, MEWS, Shock Index AUROCs",
+    "results_text": "Report comparative AUROCs for all scores",
+    "NEWS2_labelling": "Rename NEWS2 \u2192 mNEWS2 (modified NEWS2, excluding supplemental O2) throughout"
+  }
+}
