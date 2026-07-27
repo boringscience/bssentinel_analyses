@@ -1,0 +1,38 @@
+{
+  "description": "Alert burden under the window-level definition and three de-duplicated definitions, at the model operating threshold. 'event_level_sensitivity' is the proportion of distinct deterioration episodes for which at least one notification fired. 'ppv' is the proportion of fired notifications landing on a label-positive window; for the alert-episode row, 'episode_level_ppv' additionally reports the proportion of episodes overlapping at least one label-positive window.",
+  "threshold": 0.3062,
+  "suppression_hours": 12,
+  "monitored_patient_days": 333693.0,
+  "n_outcome_episodes": 9269,
+  "window_level": {
+    "definition": "Window-level",
+    "alerts": 836625,
+    "alerts_per_patient_day": 2.507,
+    "event_level_sensitivity": 0.9689,
+    "ppv": 0.0282,
+    "window_level_sensitivity": 0.9
+  },
+  "suppression_12h": {
+    "definition": "Suppression window (12 h)",
+    "alerts": 342366,
+    "alerts_per_patient_day": 1.026,
+    "event_level_sensitivity": 0.9677,
+    "ppv": 0.0308
+  },
+  "consecutive_2": {
+    "definition": "Consecutive-alert escalation (\u22652)",
+    "alerts": 113570,
+    "alerts_per_patient_day": 0.34,
+    "event_level_sensitivity": 0.4324,
+    "ppv": 0.0237
+  },
+  "alert_episode": {
+    "definition": "Alert episode (contiguous run counted once)",
+    "alerts": 173506,
+    "alerts_per_patient_day": 0.52,
+    "event_level_sensitivity": 0.9689,
+    "ppv": 0.0282,
+    "notifications_fired": 173506,
+    "episode_level_ppv": 0.0508
+  }
+}

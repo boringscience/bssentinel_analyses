@@ -1,0 +1,33 @@
+{
+  "original_composite": {
+    "auroc": 0.7583,
+    "ci_lo": 0.7554,
+    "ci_hi": 0.7611,
+    "auprc": 0.1022,
+    "n_total": 1334773,
+    "n_events": 26201,
+    "prevalence": 0.0196,
+    "elapsed_seconds": 83.2
+  },
+  "exclude_surgical": {
+    "auroc": 0.7567,
+    "ci_lo": 0.7538,
+    "ci_hi": 0.7598,
+    "auprc": 0.1014,
+    "n_total": 1227791,
+    "n_events": 23830,
+    "prevalence": 0.0194,
+    "elapsed_seconds": 79.7
+  },
+  "emergency_only": {
+    "auroc": 0.75,
+    "ci_lo": 0.7459,
+    "ci_hi": 0.7542,
+    "auprc": 0.1116,
+    "n_total": 712631,
+    "n_events": 14805,
+    "prevalence": 0.0208,
+    "elapsed_seconds": 45.2
+  },
+  "description": "Sensitivity analyses for outcome definition. 'original_composite' = ICU transfer + MV + mortality. 'mv_mortality_only' = MV + mortality (excludes ICU transfers including planned post-op). 'exclude_surgical' = removes same-day surgical admissions entirely. 'emergency_only' = only emergency/urgent admissions."
+}
